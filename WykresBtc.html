@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styl2.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykresy</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="obrazy/logo3.png" class="logo" onclick="window.location.href='glowna.html'">
+        <ul>
+            <li onclick="window.location.href='WykresBtc.html'"><a href="#">Wykresy</a></li>
+            <li onclick="window.location.href='StronaZReflinkami.html'"><a href="#">Affiliate</a></li>
+            <li onclick="window.location.href='onas.html'"><a href="#">About</a></li>
+            <li onclick="window.location.href='kontakt.html'"><a href="#">Contact</a></li>
+        </ul>
+     </div>
+
+     <div class="banerlewy">
+        <img src="obrazy/eththeter.png" class="eth" onclick="window.location.href='eth.html'">
+        <img src="obrazy/bnb.png" class="bnb" onclick="window.location.href='bnb.html'">
+        <img src="obrazy/ada.png" class="ada" onclick="window.location.href='ada.html'">
+        <img src="obrazy/dot.png" class="dot" onclick="window.location.href='dot.html'">
+        <img src="obrazy/reef1.png" class="reef" onclick="window.location.href='reef.html'">
+    </div>
+
+    <script type="text/javascript">
+        function fnOkno(){
+            window.open(location.href='http://tradingview.com/chart/?symbol=BITSTAMP%3ABTCUSD', "okienko", "toolbar=no, menubar=no, location=no, personalbar=no, status=no, resizable=yes, scrollbars=yes, copyhistory=yes, width=50vw, height=60vh, top=0, left=0");
+        }
+    </script>
+</head>
+<body>
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div id="tradingview_90879"></div>
+    <div class="tradingview-widget-copyright"><a href="https://pl.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT wykres</span></a> od TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    
+        <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "width":"60vw",
+    "height":"80%",
+    "symbol": "BINANCE:BTCUSDT",
+    "interval": "60",
+    "timezone": "Etc/UTC",
+    "theme": "dark",
+    "style": "1",
+    "locale": "pl",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": false,
+    "hide_side_toolbar": false,
+    "allow_symbol_change": true,
+    "details": true,
+    "hotlist": true,
+    "container_id": "tradingview_90879"
+  }
+  );
+</script>    
+  </div>
+  <!-- TradingView Widget END -->
+
+
+
+
+
+
+
+
+<script async src="script.js"></script>
+</body>
+</html>

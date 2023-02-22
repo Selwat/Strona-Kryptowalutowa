@@ -1,0 +1,628 @@
+body::-webkit-scrollbar
+{
+    width:1px;
+    height:1px;
+}
+body::-webkit-scrollbar-track
+{
+    height:1px;
+    background-color: rgb(0,0,0);
+}
+body::-webkit-scrollbar-thumb
+{
+    height:1px;
+background-color: rgb(0,0,0);
+border-radius:1px;
+transition: background-color .5s;
+}
+
+body{
+margin: 0;
+padding:0;
+font-family: sans-serif;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url(obrazy/background2.png);
+background-position: center;
+background-size: cover;
+}
+
+.box{
+width: 300px;
+padding:40px;
+position: absolute;
+top: 10%;
+left: 50%;
+transform: translate(-50%, 50%);
+background: #191919;
+text-align: center;
+border: 1px solid ;
+border-radius: 5%;
+}
+
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"],.box input[type=password]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto ;
+    text-align: center;
+    border: 2px solid #ffc107;
+    padding: 14px 10px;
+    width:200px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s  
+}
+
+.box input[type="text"]:focus,.box input[type=password]:focus{
+
+    width:280px;
+    border-color: #2ecc71;
+}
+
+.box input[type="button"]{
+
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto ;
+    text-align: center;
+    border: 2px solid #ffc107;
+    padding: 14px 40px; 
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="button"]:hover{
+background-color: #ffc107;
+color: #000;
+}
+
+#stopka{
+   top: 100%;
+   position: absolute;
+   color: #3490db;
+}
+
+.wielkosc{
+    position: absolute;
+    background-color: #111111;
+    width: 600;
+    height:400;
+    transition:0.5s;
+}
+.wielkosc:focus{
+    position: absolute;
+    width:700;
+    height:500;
+    background-color: #111111;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.baner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url(obrazy/background2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width:170px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    background:#ffc107;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition:0.5s;
+}
+
+.navbar ul li:hover::after{
+    width:100%;
+}
+
+.content{
+    width:100%;
+    position:absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.title{
+    font-size: 70px;
+    line-height: 100px;
+    font-weight: bold;
+    height:100px;
+    text-align: left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+
+button{
+    padding:15px 25px;
+    margin:20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #ffc107;
+    color: #fff;
+    cursor:pointer;
+    background:linear-gradient(to right, transparent 50%, #ffc107 50%);
+    background-size: 200%;
+    background-position: left;  
+    transition: background-position 0.5s;
+}
+
+button:hover{
+    background-position: right;
+    color: #000;
+}
+
+.slider{
+    color: #ffc107;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 7s linear infinite;
+
+}
+
+@keyframes slider{
+    0%{margin-top: -400px; }
+    5%{margin-top: -200px; }
+    30%{margin-top: -200px; }
+    35%{margin-top: 0px; }
+    65%{margin-top: 0px; }
+    70%{margin-top: 200px; }
+   100%{margin-top: 200px; }
+}
+
+.banerlewy{
+    width: 15%;;
+    position: left;
+    position: absolute;
+    margin-left:1vw;
+}
+
+.eth{ 
+    padding:center;
+    position:50%;
+    border: 1px solid #ffc107;
+    width:100%;
+    border-radius: 10%;
+}
+
+.bnb{
+    padding:center;
+    position:50%;
+    border: 1px solid #ffc107;
+    width:100%;
+    border-radius: 10%;
+}
+
+.ada{
+    padding:center;
+    position:50%;
+    border: 1px solid #ffc107;
+    width:100%;
+    border-radius: 10%;
+}
+
+.dot{
+    padding:center;
+    position:50%;
+    border: 1px solid #ffc107;
+    width:100%;
+    border-radius: 10%; 
+}
+
+.reef{
+    padding:center;
+    position:50%;
+    border: 1px solid #ffc107;
+    width:100%;
+    border-radius: 10%; 
+}
+
+.btc1{
+    height:20%;
+    padding:center;
+    position:50%;
+    border: 1px solid #ffc107;
+    width:100%;
+    border-radius: 10%; 
+}
+
+.eth{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eth:hover{
+    width:110%;
+    height:110%;
+    background-color: #ffc107;
+}
+
+.bnb{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bnb:hover{
+    width:110%;
+    height:110%;
+    background-color: #ffc107;
+}
+
+.ada{
+    
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ada:hover{
+    width:110%;
+    height:110%;
+    background-color: #ffc107;
+}
+
+.btc1{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btc1:hover{
+    width:110%;
+    height:110%;
+    background-color: #ffc107;
+}
+
+.dot{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot:hover{
+    width:110%;
+    height:110%;
+    background-color: #ffc107;
+}
+
+.reef{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reef:hover{
+    width:110%;
+    height:110%;
+    background-color: #ffc107;
+}
+
+.linki{
+    width:80%;
+    height: 65%;
+    position:absolute;
+    margin-left:10%;
+    margin-top: 5%;
+    border-radius: 30px;
+}
+
+.binanceobraz{
+    width:250px;
+    height:180px;
+    margin-top:30px;
+    cursor: pointer;
+    display: box;
+    margin-left:130px;
+}
+
+.textbinance{
+    margin-top:-120px;
+    display: box;
+    margin-left:90px;
+    font-family: Righteous;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    transition:0.5s;
+}
+
+.binance{
+    width:100%;
+    height: 50%;
+    margin-top:5px;
+    border-radius: 25px;
+    position: static;
+    transition:0.5s; 
+}
+
+.binance:hover{
+    background-color:#ffc107b6;
+    width:100%;
+    height: 50%;
+    margin-top:0px;
+    border-radius: 25px;
+    position: static;
+}
+
+a{
+    text-decoration: none;
+}
+
+.kucoin{
+    width:100%;
+    height: 50%;
+    margin-top:5px;
+    border-radius: 25px;
+    position: static;
+    transition:0.5s;
+}
+
+.kucoin:hover{
+    background-color:#ffc107b6;
+    width:100%;
+    height: 50%;
+    margin-top:0px;
+    border-radius: 25px;
+    position: static;
+   
+}
+
+.textkucoin{
+    margin-top:-140px;
+    display: box;
+    margin-left:90px;
+    font-family: Righteous;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    transition:0.5s;
+}
+
+.kucoinobraz{
+    width:200px;
+    height:190px;
+    margin-top:30px;
+    cursor: pointer;
+    display: box;
+    margin-left:152px;
+}
+
+.kontyner{
+    position:relative;
+    width:90vw;
+    height: 100px;
+    z-index: -1;
+    overflow: hidden;
+ }
+ 
+ .bounce{
+    width:100vw;
+     animation: bounce 4.14s linear 0s infinite alternate;
+ }
+
+ .bounceA{
+    width:90vw;
+     animation: bounceA 1.6s ease-in 0s infinite alternate;
+ }
+ 
+ @keyframes bounce{
+     from{
+         transform: translateX(0px);
+     }
+     to{
+         transform:translateX(calc(101vw - 14vmin));
+     }
+ }
+ 
+ @keyframes bounceA{
+     from{
+         transform: translateY(0px);
+     }
+     to{
+         transform:translateY(calc(85vh - 11vmin));
+     }
+ }
+
+.MojObraz{
+height:60vh;
+width:29vw;
+margin-left: 10vw;
+border-radius: 2%;
+position:absolute;
+cursor: pointer;
+transition:0.5s;
+}
+
+.MojObraz:hover{
+    height:68vh;
+    width:33vw;
+    margin-left: 7.9vw;
+    margin-top: -2.2vh;
+    border-radius: 2%;
+    position:absolute;
+    cursor: pointer;
+}
+
+.opismnie{
+    position: relative;
+    margin-left:45vw;
+    align-items: flex-end;
+    display: block;
+    justify-content:center;
+}
+
+.ms{
+   color: white;
+   font-size:60px; 
+}
+
+.web{
+    color: #ffc107;
+}
+
+.socialmedia{
+    display: inline-block;
+   position:absolute;    
+}
+
+.icon{
+    width:100px;
+    height:100px;
+    background:#fff;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+    margin-right: 20px;
+    border-radius:6px ;
+   padding: auto;
+}
+
+.icon img{
+    width:28px;
+}
+
+.icon a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background:#ffc107;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.icon a:hover{
+    opacity: 1;
+}
+
+#iconaInstagrama{
+    margin-top:5px;
+    position: absolute;
+}
+
+#iconaTwittera{
+    margin-top:10px;
+    position: relative;
+}
+
+:root {
+    --clr-neon: #ffc107;
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+}
+  
+  .neon-button {
+    margin-top:8rem;
+    font-size: 4rem;
+    margin-left: 3rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.1em solid;
+    padding: 0.3em 0.4em;
+    border-radius: 0.25em;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    position: relative;
+}
+
+  .neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+  
+  .neon-button:hover,
+  .neon-button:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+  }
+  
+  .neon-button:hover::before,
+  .neon-button:focus::before {
+    opacity: 1;
+  }
+
+  .neon-button:hover::after,
+  .neon-button:focus::after {
+    opacity: 1;
+  }
+
+
+   
+
+
+
